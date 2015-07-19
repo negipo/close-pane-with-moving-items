@@ -1,7 +1,7 @@
 {
   "name": "close-pane-with-moving-items",
   "main": "./lib/close-pane-with-moving-items",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "close-pane-with-moving-items closes panes other than current pane.",
   "activationCommands": {
     "atom-workspace": "close-pane-with-moving-items:close-pane-with-moving-items"
