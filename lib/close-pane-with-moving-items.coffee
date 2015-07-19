@@ -24,10 +24,11 @@ module.exports =
 
     if anotherPane
       anotherPanePathes = _.map(anotherPane.getItems(), (item) ->
-        item.getPath()
+        if item
+          item.getPath()
       )
       for item, i in currentPane.getItems()
-        unless _.contains(anotherPanePathes, item.getPath())
+        unless item || _.contains(anotherPanePathes, item.getPath())
           currentPane.moveItemToPane(item, anotherPane, i)
 
     currentPane.close()
